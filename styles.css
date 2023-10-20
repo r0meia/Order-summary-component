@@ -1,0 +1,133 @@
+@import url(https://fonts.googleapis.com/css?family=Red+Hat+Display:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+* {
+    margin: 0;
+    padding: 0;
+    background: border-box;
+}
+
+body {
+    background-image: url(images/pattern-background-desktop.svg);
+    font-family: 'Red Hat Display', sans-serif;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+    background-size: contain;
+}
+.container {
+    position: relative;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper {
+    background-color: white;
+    height: 700px;
+    width: 450px;;
+    border-radius: 20px;
+}
+.image {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.text {
+    margin: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 16px;
+}
+.order-summary {
+    font-size: 28px;
+    font-weight: 900;
+}
+.description {
+    font-size: 17px;
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+    margin: 16px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+.payment-plan {
+    display: flex;
+    background-color: hsl(225, 100%, 98%);
+    height: 100px;
+    margin: 38px;
+    margin-top: 0px;
+    border-radius: 15px;
+    align-items: center;
+}
+.note {
+    height: 50px;
+    margin: 25px;
+}
+.annual-plan {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: justify;
+}
+.annual {
+    font-size: 17px;
+    font-weight: 900;
+    padding-bottom: 6px;
+}
+.per-year {
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+}
+.change {
+    position: relative;
+    left: 100px;
+    display: flex;
+    justify-content: center;
+    text-align: right;
+    flex-direction: column;
+    color: hsl(245, 75%, 52%);
+}
+.payment {
+    background-color: hsl(245, 75%, 52%);
+    height: 50px;
+    margin: 38px;
+    border-radius: 15px;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.payment:hover {
+    background-color: hsl(224, 23%, 55%);
+}
+.submit-payment {
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+    position: relative;
+    top: 14px;
+}
+.cancel {
+    display: flex;
+    justify-content: center;
+}
+.cancel-order {
+    font-weight: 900;
+    color: hsl(224, 23%, 55%);
+    font-size: 16px;
+}
+.cancel-order:hover {
+    color: hsl(245, 75%, 52%);
+}
+@media only screen and (max-width: 425px) {
+    .wrapper {
+        max-width: 85%;
+    }
+    .image {
+        max-width: 100%;
+    }
+    .change {
+        position: inherit;
+    }
+}
